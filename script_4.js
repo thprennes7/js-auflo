@@ -60,7 +60,7 @@ function first50Journalists(journalistsArray) {
 function epenser(journalistsArray) {
 	console.log(journalistsArray.indexOf("@epenser"));
 }
-epenser(journalists);
+
 journalistCount(journalists);
 journalistsWithNum(journalists);
 journalistsWithAude(journalists);
@@ -69,3 +69,4 @@ journalistsWithUp(journalists);
 journalistsWithUnderscore(journalists);
 journalistsSort(journalists);
 first50Journalists(journalists);
+epenser(journalists);
