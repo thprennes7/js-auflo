@@ -32,4 +32,19 @@ function combineName(entrepreneursTable) {
 	})
 	console.log(guys)
 }
-combineName(entrepreneurs);
+
+function ages(entrepreneursTable) {
+	let x = 0;
+	entrepreneursTable.forEach(entrepreneur => {
+		entrepreneursTable[x]['age'] = 2019 - entrepreneur['year'];
+		x++;
+	})
+	console.log(entrepreneursTable);
+}
+
+function sortLast(entrepreneursTable) {
+	entrepreneursTable.sort(function(a, b){return a.last - b.last});
+	console.log(entrepreneursTable);
+}
+
+sortLast(entrepreneurs);
