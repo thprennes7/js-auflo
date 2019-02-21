@@ -47,6 +47,42 @@ function toCoin(table) {
   console.log(coin);
 }
 
+
+function inferior6000(table) {
+  let inferior = [];
+  i = 0;
+  table.forEach( currencies => {
+      if (currencies["currencie"]< 6000) {
+        inferior.push(currencies)
+      }
+    }
+  )
+  console.log(inferior)
+}
+
+function bestInferior(table) {
+  let inferior = [], bestCrypto ;
+  i = 0;
+  table.forEach( currencies => {
+      if (currencies["currencie"]< 6000) {
+        inferior.push(currencies["currencie"])
+      }
+    }
+  )
+  let bestPrice = Math.max(...inferior)
+    table.forEach(crypto => {
+      if (crypto["currencie"] === bestPrice) {
+        bestCrypto = crypto;
+      }
+    })
+    console.log(bestCrypto);
+    return bestCrypto
+}
+
+// joinToArray(devise, currencie);
+bestInferior(joinToArray(devise, currencie));
+
+// inferior6000(joinToArray(devise, currencie));
 // joinToArray(devise, currencie);
 // biggestCurrencie(joinToArray(devise, currencie));
-toCoin(joinToArray(devise, currencie));
+// toCoin(joinToArray(devise, currencie));
