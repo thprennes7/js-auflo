@@ -22,19 +22,19 @@ function joinToArray(devise, currencie) {
     table[x] = {devise: devise[x], currencie: parseFloat(currencie[x].substring(1))};
     x++;
   })
-  console.log(table);
+
   return table;
 
 }
 
 function biggestCurrencie(table) {
   table.sort(function(a, b){return b.currencie - a.currencie}) ;
-  console.log(table);
+  console.log(table.slice(0,50));
 }
 
 function smallCurrencie(table) {
   table.sort(function(a, b){return a.currencie - b.currencie}) ;
-  console.log(table);
+  console.log(table.slice(0,50));
 }
 
 function toCoin(table) {
@@ -79,10 +79,15 @@ function bestInferior(table) {
     return bestCrypto
 }
 
-// joinToArray(devise, currencie);
+console.log("<---------------------------Hash------------------------------->");
+joinToHash(devise, currencie);
+console.log("<---------------------------50 highest currencies----------------->");
+biggestCurrencie(joinToArray(devise, currencie));
+console.log("<---------------------------50 lowest currencies--------------------->");
+smallCurrencie(joinToArray(devise, currencie));
+console.log("<-------------------------Contains coin------------------------------>");
+toCoin(joinToArray(devise, currencie));
+console.log("<--------------------------Currencies lower than 6000$---------------------->");
+inferior6000(joinToArray(devise, currencie));
+console.log("<----------------------------Highest currencie lower than 6000$------------------->");
 bestInferior(joinToArray(devise, currencie));
-
-// inferior6000(joinToArray(devise, currencie));
-// joinToArray(devise, currencie);
-// biggestCurrencie(joinToArray(devise, currencie));
-// toCoin(joinToArray(devise, currencie));
