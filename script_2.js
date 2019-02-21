@@ -8,4 +8,6 @@ function factorielle () {
   console.log(result);
 
 }
+
+console.log("<--------------Script_2--------------->");
 factorielle();

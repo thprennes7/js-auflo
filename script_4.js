@@ -61,6 +61,7 @@ function epenser(journalistsArray) {
 	console.log(journalistsArray.indexOf("@epenser"));
 }
 
+console.log("<-----------Script_4-------------->");
 journalistCount(journalists);
 journalistsWithNum(journalists);
 journalistsWithAude(journalists);

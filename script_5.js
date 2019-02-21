@@ -79,15 +79,17 @@ function bestInferior(table) {
     return bestCrypto
 }
 
-console.log("<---------------------------Hash------------------------------->");
+console.log("<***********Script_5***********>");
+
+console.log("<***********Hash***********>");
 joinToHash(devise, currencie);
-console.log("<---------------------------50 highest currencies----------------->");
+console.log("<***********50 highest currencies***********>");
 biggestCurrencie(joinToArray(devise, currencie));
-console.log("<---------------------------50 lowest currencies--------------------->");
+console.log("<***********50 lowest currencies***********>");
 smallCurrencie(joinToArray(devise, currencie));
-console.log("<-------------------------Contains coin------------------------------>");
+console.log("<***********Contains coin***********>");
 toCoin(joinToArray(devise, currencie));
-console.log("<--------------------------Currencies lower than 6000$---------------------->");
+console.log("<***********Currencies lower than 6000$***********>");
 inferior6000(joinToArray(devise, currencie));
-console.log("<----------------------------Highest currencie lower than 6000$------------------->");
+console.log("<***********Highest currencie lower than 6000$***********>");
 bestInferior(joinToArray(devise, currencie));

@@ -47,4 +47,9 @@ function sortLast(entrepreneursTable) {
 	console.log(entrepreneursTable);
 }
 
+
+console.log("<-------------Script_6------------------->");
+bornIn70s(entrepreneurs);
+combineName(entrepreneurs);
+ages(entrepreneurs);
 sortLast(entrepreneurs);

@@ -9,7 +9,7 @@ const books = [
 function asTheyAllBeTaken(bookList) {
 	let x = 0;
 	bookList.forEach(book => {
-		if (book['rented'] == 0) 
+		if (book['rented'] == 0)
 			x = 1;
 	})
 	if (x == 0)
@@ -42,5 +42,6 @@ function sortThemAll(bookList) {
 	bookList.sort(bookList['title']);
 	console.log(bookList);
 }
+console.log("<-----------------Script_7----------------->");
 idThatIWant(books, 873495);
 sortThemAll(books);

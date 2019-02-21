@@ -20,4 +20,5 @@ function pyramideMario () {
 
 }
 
+console.log("<-----------------Script_3------------->");
 pyramideMario();
